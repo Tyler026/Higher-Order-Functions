@@ -42,3 +42,19 @@ var isDog = function(animal) {
 
 var dogs = animals.filter(isDog)
 var otherAnimals = animals.reject(isDog)
+
+
+// Map 
+var names = animals.map(function(animal) {
+    return animal.name
+})
+
+// Creating New Objects
+var names = animals.map(function(animal) {
+    return animal.name + ' is a ' + animal.species
+})
+
+// Map Arrows               
+//var names = animals.map(function(animal) { return animal.name })
+//var names = animals.map((animal) => animal.name )
+var names = animals.map((x) => x.name )
